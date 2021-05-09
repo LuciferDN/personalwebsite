@@ -563,3 +563,56 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
+.ovbox {
+    display: grid;
+    width: auto;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+        "Problemtitle      Position"
+        "Problemcontent    Position"
+        "Solutiontitle     Position"
+        "Solutioncontent   Position";
+    grid-template-columns: 0 auto;
+}
+
+.ovproblemtitle {
+    grid-area: Problemtitle;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+}
+
+.ovproblemcontent {
+    grid-area: Problemcontent;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+}
+
+.ovsolutiontitle {
+    grid-area: Solutiontitle;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+}
+
+.ovsolutioncontent {
+    grid-area: Solutioncontent;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+}
+
+.ovposition {
+    grid-area: Position;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+}
